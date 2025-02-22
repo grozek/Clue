@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" type="text/css" href="style.css">
+<head>
+    <meta charset="UTF-8">
+    <title>Clue Page</title>
+</head>
+<nav>
+    <h1>CLUE PAGE - finding the blues</h1>
+</nav>
+
+
+<body>
+    <div class="centerSquare">
+        <div id="menuContainer">
+            <h1>People:</h1>
+            <p>Yellow, Green, Blue</p>
+            <h1>Place:</h1>
+            <p>Kitchen, Bathroom, Bedroom</p>
+            <h1>Weapon:</h1>
+            <p>Gun, Knife, Candle</p>
+        </div>
+        <div id="welcomeContainer">
+            <h4>Welcome to the game</h4>
+        </div>
+        <div id="initialSetup">
+            <h2>INITIAL SETUP</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="userN">
+            <br>
+            <label for="playerN">Number of players:</label>
+            <input type="text" id="playerN">
+            <button onclick="playerFieldDrop();">Generate</button>
+            <div id="playerNamesI"></div>
+            <button id="submitBtn" onclick="playersFieldSubmit()">Submit</button>
+            <p id="welcomeT"> </p>
+        </div>
+        <!----
+        <input type="text" id="card2">
+        <input type="text" id="card3">  
+        -->
+        <div id="initContainer">
+            <h2>The Beginning</h2>
+            <label for="initCards"> Initial Cards (provide all three):</label>
+            
+            <button onclick="checkCards()">Submit</button>
+        </div>
+        <!-- <input type="text" id="menu1">
+        <input type="text" id="menu2">
+        <input type="text" id="menu3"> -->
+
+        <div id="everyContainer">
+            <h2>On Every Move</h2>
+            <button onclick="move()">Next Move</button>
+            <!--button onclick="checkCards()">Analyze</button-->
+            <!--button onclick="sendData()">Analyze</button-->
+            <p id="generalT"> </p>
+            <p id="subT"> </p>
+            <p id="subT2"> </p>
+            <div id="askedItems"></div>
+        </div>
+        <div id="arrowContainer" style="margin-top:70%;margin-bottom:30%">
+            <img id="arrowL" src="arrowL.png" height="50px" onclick="arrowL()">
+            <img id="arrowR" src="arrowR.png" height="50px" onclick="arrowR()">
+        </div>
+    </div>
+</body>
+
+    <script src="script.js" defer></script>
+
+</html> 
