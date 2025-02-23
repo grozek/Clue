@@ -30,7 +30,8 @@
             <br>
             <label for="playerN">Number of players:</label>
             <input type="text" id="playerN">
-            <button onclick="playerFieldDrop();">Generate</button>
+            <br>
+            <!--button onclick="playerFieldDrop();">Generate</button-->
             <div id="playerNamesI"></div>
             <button id="submitBtn" onclick="playersFieldSubmit()">Submit</button>
             <p id="welcomeT"> </p>
@@ -42,8 +43,17 @@
         <div id="initContainer">
             <h2>The Beginning</h2>
             <label for="initCards"> Initial Cards (provide all three):</label>
+            <div id="itemContainer">
+                <label for="item1">Item 1:</label>
+                <select id="item1"></select><br>
             
-            <button onclick="checkCards()">Submit</button>
+                <label for="item2">Item 2:</label>
+                <select id="item2"></select><br>
+            
+                <label for="item3">Item 3:</label>
+                <select id="item3"></select><br>
+            </div>
+            <!--button onclick="checkCards()">Submit</button-->
         </div>
         <!-- <input type="text" id="menu1">
         <input type="text" id="menu2">
@@ -60,12 +70,12 @@
             <div id="askedItems"></div>
         </div>
         <div id="arrowContainer" style="margin-top:70%;margin-bottom:30%">
-            <img id="arrowL" src="arrowL.png" height="50px" onclick="arrowL()">
-            <img id="arrowR" src="arrowR.png" height="50px" onclick="arrowR()">
+            <img id="arrowL" src="images/arrowL.png" height="50px" onclick="arrowL()">
+            <img id="arrowR" src="images/arrowR.png" height="50px" onclick="arrowR()">
         </div>
     </div>
 </body>
 
-    <script src="script.js" defer></script>
-
+    <script src="frontScript.js" defer></script>
+    <script src="backScript.js" defer></script>
 </html> 
